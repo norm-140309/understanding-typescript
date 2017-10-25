@@ -22,3 +22,13 @@ const person = new Person('Norm Glomski', 'nglomski');
 console.log('Name: ', person.name);
 console.log('Username: ', person.username);
 person.printAge();
+
+//Inheritance
+class Norm extends Person {
+    constructor(username: string) {
+        super( 'Norm Glomski', username);
+        this.age = 31;
+    }
+}
+const person2 = new Norm('normando2');
+console.log('Person2: ', person2);
