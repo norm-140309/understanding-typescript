@@ -1,6 +1,6 @@
 "use strict";
 var Person = (function () {
-    function Person(name, username, age) {
+    function Person(name, username) {
         this.username = username;
         this.age = 47;
         this.name = name;
@@ -18,5 +18,4 @@ var Person = (function () {
 var person = new Person('Norm Glomski', 'nglomski');
 console.log('Name: ', person.name);
 console.log('Username: ', person.username);
-person.setType('Programmer');
 person.printAge();

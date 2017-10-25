@@ -3,7 +3,7 @@ class Person {
     private type: string;
     protected age: number = 47;
     
-    constructor(name: string, public username: string, age: number) {
+    constructor(name: string, public username: string) {
         this.name = name;
     }
 
@@ -21,5 +21,4 @@ class Person {
 const person = new Person('Norm Glomski', 'nglomski');
 console.log('Name: ', person.name);
 console.log('Username: ', person.username);
-person.setType('Programmer');
 person.printAge();
